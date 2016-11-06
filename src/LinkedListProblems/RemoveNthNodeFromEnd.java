@@ -18,8 +18,8 @@ public class RemoveNthNodeFromEnd {
         myLL.AddNode(new Node(33));
         myLL.AddNode(new Node(45)); //As per my linked list design, the head is here!! i.e new node comes to the head of the list
         int n=3;
-       // Node head = RemoveNth(myLL,n);
-       // myLL.ShowNodes();
+       //Node head = RemoveNth(myLL,n);         //Uncomment this line to use iterative method as well
+       //myLL.ShowNodes();
         Node head2 = RemoveRecursively(myLL,myLL.Head,n);
         myLL.ShowNodes();
     }
