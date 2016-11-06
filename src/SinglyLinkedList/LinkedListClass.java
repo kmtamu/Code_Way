@@ -4,12 +4,12 @@ package SinglyLinkedList;
  * Created by Kumar on 10/25/2016.
  */
 public class LinkedListClass {
-    private Node Head;
-    private Node Tail;
+    public Node Head;
+    public Node Tail;
     private int Length;
 
     //method to add a new node at the head
-    void AddNode(Node newNode){
+    public void AddNode(Node newNode){
         if (this.Head ==null && this.Tail==null){
             this.Head = newNode;
             this.Tail = newNode;
@@ -54,7 +54,7 @@ public class LinkedListClass {
     }
 
     //Prrint all the nodes of the list
-    void ShowNodes() {
+    public void ShowNodes() {
         Node temp = this.Head;
         while (temp != null) {
             System.out.println("Data held here is: " + temp.Data + " The address of this node is: " + temp);

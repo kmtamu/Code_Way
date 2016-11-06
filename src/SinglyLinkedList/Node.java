@@ -4,10 +4,10 @@ package SinglyLinkedList;
  * Created by Kumar on 10/25/2016.
  */
 public class Node {
-    Node NextNode;
-    int Data;
+    public Node NextNode;
+    public int Data;
 
-    Node(int a){
+    public Node(int a){
         this.Data=a;
     }
     Node(){
