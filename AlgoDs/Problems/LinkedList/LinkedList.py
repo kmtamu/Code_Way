@@ -12,6 +12,7 @@ class LinkedList:
         else:
             tmp.nextNode = self.head
             self.head=tmp
+            self.length=self.length+1
 
     def DisplayNodes(self):
         tmp=self.head
