@@ -4,7 +4,7 @@ class LinkedList:
         self.head=None
         self.length=0
 
-    def AddNode(self,temp):
+    def addNode(self,temp):
         tmp = Node(temp)
         if self.head==None:
             self.head = tmp
@@ -14,7 +14,7 @@ class LinkedList:
             self.head=tmp
             self.length=self.length+1
 
-    def DisplayNodes(self):
+    def displayNodes(self):
         tmp=self.head
         while tmp!=None:
             print tmp.data

@@ -1,7 +1,7 @@
 from Problems.LinkedList.LinkedList import LinkedList
 
 
-def PartitionAndRearrangeNodes(myll,x):
+def partitionAndRearrangeNodes(myll,x):
     Head1 = None
     Head2 =None
     temp1=None
@@ -36,13 +36,13 @@ def PartitionAndRearrangeNodes(myll,x):
 
 myll2 = LinkedList()
 #myll2.DisplayNodes()
-myll2.AddNode(9)
-myll2.AddNode(16)
-myll2.AddNode(6)
-myll2.AddNode(11)
-myll2.AddNode(15)
-myll2.AddNode(4)
-myll2.AddNode(2)
-myll2.DisplayNodes()
-PartitionAndRearrangeNodes(myll2, 11)
-myll2.DisplayNodes()
+myll2.addNode(9)
+myll2.addNode(16)
+myll2.addNode(6)
+myll2.addNode(11)
+myll2.addNode(15)
+myll2.addNode(4)
+myll2.addNode(2)
+myll2.displayNodes()
+partitionAndRearrangeNodes(myll2, 11)
+myll2.displayNodes()

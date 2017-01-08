@@ -2,7 +2,7 @@ from Problems.LinkedList.LinkedList import LinkedList
 from Problems.LinkedList.Node import Node
 
 
-def RemoveDuplicate(myll):
+def removeDuplicate(myll):
     tmp=myll.head
     tmp2=tmp.nextNode
     while tmp2 != None:
@@ -14,14 +14,14 @@ def RemoveDuplicate(myll):
             tmp2 = tmp2.nextNode
 
 myll = LinkedList()
-myll.AddNode(11)
-myll.AddNode(11)
-myll.AddNode(11)
-myll.AddNode(0)
-myll.AddNode(19)
-myll.AddNode(1)
-myll.AddNode(1)
-myll.AddNode(188)
-myll.DisplayNodes()
-RemoveDuplicate(myll)
-myll.DisplayNodes()
+myll.addNode(11)
+myll.addNode(11)
+myll.addNode(11)
+myll.addNode(0)
+myll.addNode(19)
+myll.addNode(1)
+myll.addNode(1)
+myll.addNode(188)
+myll.displayNodes()
+removeDuplicate(myll)
+myll.displayNodes()
