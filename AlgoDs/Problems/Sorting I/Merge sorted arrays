@@ -1,0 +1,36 @@
+
+def MergeArrays(list1, list2):
+    ResultList = list()
+    i=0
+    j=0
+
+    for r in range(list1.__len__()+list2.__len__()-1):
+        if (i>=(len(list1))):
+            while j<=(list2.__len__()-1):
+                ResultList.append(list2[j])
+                j+=1
+        elif (j>=len(list2)):
+            while i<=(list1.__len__()-1):
+                ResultList.append(list1[i])
+                i+=1
+        else:
+            if (list1[i]<=list2[j]):
+                ResultList.append(list1[i])
+                i+=1
+            else:
+                ResultList.append(list2[j])
+                j+=1
+
+    print(ResultList[0:])
+
+
+
+list1 = [1,99,200,250]
+list2 = [15, 89, 230, 531, 1000]
+
+print(list1.__len__()+list2.__len__())
+if list1.__len__() >= list2.__len__():
+    MergeArrays(list1,list2)
+else:
+    MergeArrays(list2,list1)
+
