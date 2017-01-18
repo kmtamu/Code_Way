@@ -1,0 +1,7 @@
+class Employee:
+
+
+    def __init__(self, ID, Name, Salary):
+        self.ID = ID
+        self.Name=Name
+        self.Salary = Salary
