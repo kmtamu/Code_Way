@@ -1,0 +1,21 @@
+from Employee import Employee
+
+
+def InsertionSort(input_array):
+    i=0
+    j=1
+    while j<(len(input_array)):
+        i=j
+        while i>0:
+            if input_array[i].ID<input_array[i-1].ID:
+                temp = input_array[i]
+                input_array[i]=input_array[i-1]
+                input_array[i-1]=temp
+            i-=1
+        j+=1
+    for emp in input_array:
+        print(emp.ID, emp.Name, emp.Salary)
+
+input2 = [Employee(31,'Manish',2345),Employee(1,'Rahul',2281712),Employee(19,'hulu',998723),Employee(124,'Jigu',99009),Employee(61,'Mina',20),Employee(11,'Tina',321),Employee(190,'Ravina',546352)]
+
+InsertionSort(input2)
