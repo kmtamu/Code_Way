@@ -1,0 +1,19 @@
+#Check palindrome using stack. This problem uses deque object in python to implement stack and queue!
+#class - collections.deque
+#case sensitive!
+
+from collections import deque
+
+def checkPalindrome(temp):
+    l=len(temp)
+    for i in range(0,int(l/2)):
+        if temp.pop() != temp.popleft():
+            return False
+
+    return True
+
+
+
+x = deque('ANNA')
+val = checkPalindrome(x)
+print(val)
